@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 1</title>
+    <title>Exercicio 5</title>
     <link rel="stylesheet" href="../style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <body>
     <header>
       <div class="container-header">
-        <div><img id="logo" src="/image/logo.png" alt="logo"></div>
+        <div><img id="logo" src="../image/logo.png" alt="logo"></div>
         <nav id="menu">
           <ul>
             <li>
@@ -27,18 +27,19 @@
     </header>
 
     <main id="principal">
-        <h1>Exercicio 1 - Desafio JavaScript</h1>
-        <h5>Muda cor clicando no botão!</h5>
+        <h1>Exercicio 6 - Desafio JavaScript</h1>
+        <h5>Habilitar botão com 2 ou mais itens selecionados</h5>
         <br>
-          <form action="" id="formulario" method="get">
-            <button onclick="changeColor('red')" type="button" class="btn btn-danger">Vermelho</button>
-            <br><br>
-            <button onclick="changeColor('green')" type="button" class="btn btn-success">Verde</button>
-            <br><br>
-            <button onclick="changeColor('blue')" type="button" class="btn btn-primary">Azul</button>
-            <br><br>
-            <button onclick="changeColor('yellow')" type="button" class="btn btn-warning">Amarelo</button>
-          </form>
+        <form id="meuFormulario">
+          <label><input type="checkbox" name="item2"> C#</label><br>
+          <label><input type="checkbox" name="item4"> Java</label><br>
+          <label><input type="checkbox" name="item5"> Kotlin</label><br>
+          <label><input type="checkbox" name="item3"> Python</label><br>
+          <label><input type="checkbox" name="item1"> JavaScript</label><br>
+          <br>
+          <button type="submit" id="buttonForm" class="btn btn-light" disabled>Enviar Resposta</button>
+
+      </form>
 
     </main>
     <footer>

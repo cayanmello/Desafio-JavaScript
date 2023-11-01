@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 7</title>
+    <title>Exercicio 1</title>
     <link rel="stylesheet" href="../style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <body>
     <header>
       <div class="container-header">
-        <div><img id="logo" src="/image/logo.png" alt="logo"></div>
+        <div><img id="logo" src="../image/logo.png" alt="logo"></div>
         <nav id="menu">
           <ul>
             <li>
@@ -27,24 +27,18 @@
     </header>
 
     <main id="principal">
-        <h1>Exercicio 7 - Desafio JavaScript</h1>
-        <p id="texto">Como distinguir HTML de HTML5: Experimenta no Internet Explorer, funcionou? Não! Então é HTML5!</p>
+        <h1>Exercicio 1 - Desafio JavaScript</h1>
+        <h5>Muda cor clicando no botão!</h5>
         <br>
-        <form action="" id="formulario" method="get">
-          <button onclick="changeColorAndBackground('black')" type="button" class="btn btn-dark">Preto</button>
-          <br>
-          <button onclick="changeColorAndBackground('white')" type="button" class="btn btn-light">Branco</button>
-          <br><br>
-          <div>
-            <button onclick="increaseFontSize()" type="button" class="btn btn-light">Mais +</button>
-            <button onclick="decreaseFontSize()" type="button" class="btn btn-light">Menos -</button>
-          </div>
-          <br>
-          <div>
-            <button onclick="transformUppercase()" type="button" class="btn btn-light">Maiúscula</button>
-            <button onclick="transformLowercase()" type="button" class="btn btn-light">Minúscula</button>
-          </div>
-        </form>
+          <form action="" id="formulario" method="get">
+            <button onclick="changeColor('red')" type="button" class="btn btn-danger">Vermelho</button>
+            <br><br>
+            <button onclick="changeColor('green')" type="button" class="btn btn-success">Verde</button>
+            <br><br>
+            <button onclick="changeColor('blue')" type="button" class="btn btn-primary">Azul</button>
+            <br><br>
+            <button onclick="changeColor('yellow')" type="button" class="btn btn-warning">Amarelo</button>
+          </form>
 
     </main>
     <footer>

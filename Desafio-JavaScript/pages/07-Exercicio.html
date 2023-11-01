@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 3</title>
+    <title>Exercicio 7</title>
     <link rel="stylesheet" href="../style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <body>
     <header>
       <div class="container-header">
-        <div><img id="logo" src="/image/logo.png" alt="logo"></div>
+        <div><img id="logo" src="../image/logo.png" alt="logo"></div>
         <nav id="menu">
           <ul>
             <li>
@@ -27,19 +27,24 @@
     </header>
 
     <main id="principal">
-        <h1>Exercicio 3 - Desafio JavaScript</h1>
-        <h5>Mude a cor de acordo com as opções baixo:</h5>
+        <h1>Exercicio 7 - Desafio JavaScript</h1>
+        <p id="texto">Como distinguir HTML de HTML5: Experimenta no Internet Explorer, funcionou? Não! Então é HTML5!</p>
         <br>
         <form action="" id="formulario" method="get">
-          <label for="cores">Escolha uma cor:</label>
-          <select id="cores" onchange="selectChangeColor(event)">
-              <option>Default</option>
-              <option value="red">Vermelho</option>
-              <option value="green">Verde</option>
-              <option value="blue">Azul</option>
-              <option value="yellow">Amarelo</option>
-          </select>
-      </form>
+          <button onclick="changeColorAndBackground('black')" type="button" class="btn btn-dark">Preto</button>
+          <br>
+          <button onclick="changeColorAndBackground('white')" type="button" class="btn btn-light">Branco</button>
+          <br><br>
+          <div>
+            <button onclick="increaseFontSize()" type="button" class="btn btn-light">Mais +</button>
+            <button onclick="decreaseFontSize()" type="button" class="btn btn-light">Menos -</button>
+          </div>
+          <br>
+          <div>
+            <button onclick="transformUppercase()" type="button" class="btn btn-light">Maiúscula</button>
+            <button onclick="transformLowercase()" type="button" class="btn btn-light">Minúscula</button>
+          </div>
+        </form>
 
     </main>
     <footer>
