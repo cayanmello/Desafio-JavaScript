@@ -45,7 +45,7 @@ const changeColorAndBackground = (cor) => {
 };
 
 
-// Exercicio - 7 
+// Exercicio - 7
 
 const texto = document.querySelector('p');
 
